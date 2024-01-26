@@ -64,8 +64,6 @@ namespace ShareYourMoney
             Stage.onServerStageBegin += OnStageBegin_ResetPreventMoneyDrops;
             On.RoR2.OutsideInteractableLocker.LockPurchasable += PreventInteractionLockPrefab;
 
-            R2API.Utils.CommandHelper.AddToConsoleWhenReady();
-
             // Sure would be a shame if this thing fell out of bounds.
             //On.RoR2.MapZone.OnTriggerEnter += MapZone_OnTriggerEnter;
             //On.RoR2.Networking.NetworkManagerSystemSteam.OnClientConnect += (s, u, t) => { };
