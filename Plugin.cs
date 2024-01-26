@@ -72,7 +72,12 @@ namespace ShareYourMoney
 
         public bool CharacterBodyIsLocalUser(CharacterBody body)
         {
-            return LocalUserManager.GetFirstLocalUser().cachedMaster == body.master;
+            var user = LocalUserManager.GetFirstLocalUser();
+            if (user != null)
+            {
+                return user.cachedMaster == body.master;
+            }
+            return false;
         }
 
         private void AddInputTrackerToCharacter(CharacterBody body)
