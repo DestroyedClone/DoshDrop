@@ -18,14 +18,14 @@ using static ShareYourMoney.DoshContent;
 
 namespace ShareYourMoney
 {
-    [BepInPlugin("com.DestroyedClone.DoshDrop", "Dosh Drop", "1.0.5")]
+    [BepInPlugin("com.DestroyedClone.DoshDrop", "Dosh Drop", "1.0.7")]
     [BepInDependency(R2API.R2API.PluginGUID, R2API.R2API.PluginVersion)]
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     public class DoshDropPlugin : BaseUnityPlugin
     {
         internal static BepInEx.Logging.ManualLogSource _logger;
-        public static PluginInfo PInfo { get; private set; }
+        public static BepInEx.PluginInfo PInfo { get; private set; }
 
         // CFG
         public static ConfigEntry<KeyboardShortcut> cfgCDropKey;

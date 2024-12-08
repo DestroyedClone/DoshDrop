@@ -1,9 +1,9 @@
 {
   "author": "DestroyedClone",
   "name": "DoshDrop",
-  "version_number": "1.0.6",
-  "website_url": "https://github.com/DestroyedClone/PoseHelper/blob/master/ShareYourMoney/Class1.cs",
-  "description": "1.0.6 - Dedicated server fix | Press 'B' to drop your money as gold to share with teammates like in Killing Floor.",
+  "version_number": "1.0.7",
+  "website_url": "https://github.com/DestroyedClone/DoshDrop",
+  "description": "Press 'B' to drop your money as gold to share with teammates like in Killing Floor.",
   "dependencies": [
     "bbepis-BepInExPack-5.4.2113",
     "RiskofThunder-R2API_Core-5.0.12",
