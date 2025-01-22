@@ -198,15 +198,16 @@ namespace ShareYourMoney
                 _logger.LogWarning("DoshDrop.Server_ReleaseMoney called on client!");
                 return;
             }
-            if (goldReward == 0)
-            {
-                goldReward = (uint)Mathf.CeilToInt(Run.instance.GetDifficultyScaledCost(baseChestCost) * cfgSPercentToDrop.Value * 1);
-            }
             if (master)
             {
                 var body = master.GetBody();
                 if (!body)
                     return;
+
+                if (goldReward == 0)
+                {
+                    goldReward = (uint)Mathf.CeilToInt(Run.instance.GetDifficultyScaledCost(baseChestCost) * cfgSPercentToDrop.Value * 1);
+                }
 
                 if (goldReward > master.money)
                 {
