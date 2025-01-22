@@ -1,5 +1,6 @@
-* `1.0.7` - Recompiled for SOTS Update #1
+* `1.0.52` - Recompiled for SOTS Update #1
 * `1.0.6` - Added LocalUser nullcheck for dedicated servers lacking a localuser
+** This version comes after 1.0.51, but the versioning number is incorrect (6 is less than 51). 
 * `1.0.51` - Fixed folder structure for r2modman
 * `1.0.5` - Fixed authority check preventing clients from dropping money
 	* Added Risk of Options support
